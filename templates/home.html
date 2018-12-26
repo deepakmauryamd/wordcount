@@ -1,0 +1,11 @@
+<h1>This is homepage in template.</h1>
+<p>Enjoy Django.</p>
+
+<form action="{% url 'count' %}">
+    <input type="text" name="text" placeholder="Enter String">
+    <input type="submit" value="Submit">
+</form>
+
+<form action="{% url 'about' %}">
+    <input type="submit" value="About">
+</form>

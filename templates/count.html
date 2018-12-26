@@ -1,0 +1,18 @@
+<h1>You are in count.html page.</h1>
+
+<a href="{% url 'homepage' %}">Home</a>
+
+<h2>The text you enterd is:</h2>
+{{ text }}
+
+<h3>The length is:</h3>
+{{ data_length }}
+
+<br><br>
+<p>Data Dictionary is:</p>
+
+{% for data,value in data_dictionary %}
+
+{{data}} = {{value}}
+<br>
+{%endfor%}
